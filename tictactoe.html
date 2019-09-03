@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <p id="demo"></p>
+<style>
+
+
+  @import url('https://fonts.googleapis.com/css?family=Gayathri&display=swap');
+  @import url('https://fonts.googleapis.com/css?family=Indie+Flower&display=swap');
+
+
+
+  body {
+  margin: 100px;
+  background: #61E786;
+}
+
+.box {
+  background-color: #444;
+  color: #fff;
+  border-radius: 5px;
+  padding: 20px;
+  font-size: 150%;
+  text-align: center;
+}
+
+.box:nth-child(even) {
+  background-color: #ccc;
+  color: #000;
+}
+
+.wrapper {
+  width: 600px;
+  display: grid;
+  grid-gap: 10px;
+  grid-template-columns: repeat(6, 100px);
+  grid-template-rows: 100px 100px 100px;
+  grid-auto-flow: column;
+}
+
+h1 {
+  border-bottom: 1px solid black;
+  font-family: 'Gayathri', sans-serif;
+
+}
+
+#message {
+  font-size: 18pt;
+  font-family: 'Indie Flower', cursive;;
+}
+
+#restart {
+  font-size: 18pt;
+  font-family: 'Indie Flower', cursive;;
+}
+
+
+  
+
+
+
+}
+</style>
+</head>
+
+
+<body onload="startGame();">
+
+<h1>TIC TAC TOE</h1>
+<div id="message">May The Odds Never Be In Your Favor</div>
+
+
+<div class="wrapper">
+  <div class="box" id="s1" onClick="nextMove(this)"></div>
+  <div class="box" id="s2" onClick="nextMove(this)"></div>
+  <div class="box" id="s3" onClick="nextMove(this)"></div>
+  <div class="box" id="s4" onClick="nextMove(this)"></div>
+  <div class="box" id="s5" onClick="nextMove(this)"></div>
+  <div class="box" id="s6" onClick="nextMove(this)"></div>
+  <div class="box" id="s7" onClick="nextMove(this)"></div>
+  <div class="box" id="s8" onClick="nextMove(this)"></div>
+  <div class="box" id="s9" onClick="nextMove(this)"></div>
+ 
+</div>
+
+
+<a href="javascript: startGame();" id="restart">Play Again</a>
+<script src="tictactoe.js"></script>
+</body>
+
+</html>
+
+
+
+
+
+
+
